@@ -1,0 +1,281 @@
+/*importo las fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Playfair Display', serif;;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    
+}
+
+header img{
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+}
+
+
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /*oculto lo que queda fuera del contenedor*/
+    contain: paint;
+    background-color: #D1B347;
+}
+
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+    
+}
+
+.contenedor .contenedor-items .item{
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+    background-color: #F2E8C4;
+}
+
+.contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+/*
+.contenedor-items .item .img-item{
+    width: 100%;
+    
+}*/
+
+.contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* seccion header*/
+header{
+    background-color: black;
+    margin: 0px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+
+h1{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e35d04;
+}
+
+nav ul li.submenu ul {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav ul li.submenu:hover ul {
+    display: block;
+}
+
+
+nav ul li.submenu ul li {
+    width: 100%;
+}
+
+nav ul li.submenu ul li a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li.submenu ul li:last-child a {
+    border-bottom: none;
+}
+
+.submenu li:hover {
+    background-color: #cac8c8;
+    border: 1px solid;
+    /* Agrega aquí cualquier otro estilo que desees aplicar cuando el cursor esté sobre el elemento */
+  }
+  
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="search"] {
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #f2f2f2; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde de la barra */
+    box-shadow: 0px 2px 2px #ccc; /* Efecto de sombra */
+}
+
+#busqueda {
+    background-image: url(lupa.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 25px;
+}
+
+
+/*Seccion section*/
+section {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    
+}
+
+.general{
+    background-color: #E5D68A;
+}
+
+.inicio{
+    width: 80%;
+}
+
+section p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+section h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*seccion responsive*/
+@media screen and (max-width:850px){
+    .contenedor{
+        display: block;
+    }
+    .contenedor-items{
+        width: 100% !important;
+    }
+    .carrito{
+        width: 100%;
+        
+    }
+}
+
+
+/*seccion del footer*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #000000, #8e4004);
+    color: #ffffff;
+    padding: 20px;
+    /*font-size: 20px;*/
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+footer nav li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+footer nav li img {
+    margin-right: 15px; /* ajusta este valor según necesites */
+    cursor: pointer;
+}
+
+.derechos{
+    bottom: 0;
+    right: 0;
+    margin-bottom: -120px; /* ajusta este valor según necesites */
+}
+
+
+html{
+    scroll-behavior: smooth;
+}

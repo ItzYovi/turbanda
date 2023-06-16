@@ -4,9 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Economato y mas!</title>
+    <link rel="icon" type="image/x-icon" href="logo25.png">
 </head>
 <body>
-   <h1>Hola pa </h1>
+    <header>
+        <center><img src="logo4.png" alt="logo-economato" height="250px" width="600px"></center>
+        <div class="cabecera">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#libros">Libros</a></li>
+                    <li><a href="#articulosDeLibreria">Articulos de libreria</a></li>
+                    <li><a href="#sobreNosotros">Sobre Nosotros</a></li>
+                    <li class="submenu">
+                        <a href="#">Contactos</a>
+                        <ul>
+                            <li><a href="#contactos">Facebook</a></li>
+                            <li><a href="#contactos">Telegram</a></li>
+                            <li><a href="#contactos">Mail</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="carrito.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></i></a></li>
+                </ul>
+            </nav>
+            <form action="/busqueda" method="get">
+                <label for="busqueda"></label>
+                <input type="search" name="busqueda" id="busqueda" placeholder="Buscar">
+            </form>
+        </div>
+    </header>
+
+    <section id="inicio" class="general">
+        <P>Inicio</P>
+   
+
+    <section id="recomendaciones" class="general">
+        <p>Nuestras recomendaciones</p>
+            <section class="contenedor">
+                
+                <!--contenedor de los elementos-->
+                <div class="contenedor-items">
+                    <div class="item">
+                        <span class="titulo-item">Libro1</span>
+                        <img src="Libros/libro1.png" alt="" height="195px" width="200px" class="img-item" >
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Libro2</span>
+                        <img src="Libros/señor.png" alt=""  class="img-item" height="200px" width="200px">
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Libro3</span>
+                        <img src="Utiles/avon.png" alt="" height="200px" width="200px" class="img-item">
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Libro4</span>
+                        <img src="Utiles/bic.png" alt="" class="img-item" height="200px" width="150px">
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Libro5</span>
+                        <img src="logo.png" alt="" class="img-item" height="200px" width="200px">
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Libro6</span>
+                        <img src="logo.png" alt="" class="img-item" height="200px" width="200px">
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Libro7</span>
+                        <img src="logo.png" alt="" class="img-item" height="200px" width="200px">
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Libro8</span>
+                        <img src="logo.png" alt="" class="img-item" height="200px" width="200px">
+                        <span class="precio-item">$15.000</span>
+                        <button class="boton-item">Agregar al carrito</button>
+                    </div>
+                    
+                </div>  
+                
+            </section>
+    </section>
+    
+
+    <section id="libros" class="general">
+        <p>Libros disponibles</p>
+        <section class="contenedor">
+            <!--contenedor de los elementos-->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Libro1</span>
+                    <img src="Libros/big.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro2</span>
+                    <img src="Libros/estrella.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro3</span>
+                    <img src="Libros/jardin.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro4</span>
+                    <img src="Libros/libro1.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro5</span>
+                    <img src="Libros/señor.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro6</span>
+                    <img src="Libros/templo.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                
+            </div>  
+        </section>
+    </section>
+
+    <section id="articulosDeLibreria" class="general">
+        <p>Articulos disponibles</p>
+        <section class="contenedor">
+            <!--contenedor de los elementos-->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Libro1</span>
+                    <img src="Utiles/avon.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro2</span>
+                    <img src="Utiles/cartu.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro3</span>
+                    <img src="Utiles/bic.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Libro4</span>
+                    <img src="Utiles/exito.png" alt="" class="img-item"  height="200px" width="200px">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                
+            </div>  
+        </section>
+    </section>
+
+    <section id="sobreNosotros" class="general">
+            <h2>¿Quienes somos?</h2>
+            <p>
+                Somos un grupo de estudiantes de Analistas de Sistemas del Instituto Superior del Milagro N°8207.<br>
+                Este es nuestro proyecto llamado Economato que trata de...
+            </p>
+    </section>
+</section>
+
+    <footer id="contactos">
+        <nav>
+            <li>
+                <img src="iconFace.png" alt="Facebook" width="25" height="25">
+                Facebook
+            </li> 
+            <li>
+                <img src="icotele.png" alt="Instagram" width="25" height="25">
+                Telegram
+            </li>
+            <li>
+                <img src="icomail.png" alt="Mail" width="25" height="25">
+                Mail
+            </li>
+        </nav>
+        <center><img src="/logosin.png" alt="logo-economato" width="200px" height="100px"></center>
+        <div class="derechos">
+            Derechos Reservados a Economato
+        </div>
+    </footer>
 </body>
 </html>
